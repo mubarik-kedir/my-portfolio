@@ -13,9 +13,31 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest">
     </script>
-
 </head>
 <body>
-    <h1>my portfolio</h1>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="header">
+        <nav class="nav wrap" aria-label="Main navigation">
+            <a class="brand" href="#home"><span class="brand-icon">M</span>Mubarik<span class="dot">.</span></a>
+            <button id="menuToggle" class="menu-toggle" aria-label="open menu" aria-expanded="false">
+                <i data-lucide="menu"></i></button>
+                <div class="nav-links" id="navLinks">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#journey">Journey</a>
+                    <a class="nav-button" href="#contact">Let's talk<i data-lucide="arrow-up-right"></i></a>
+                </div>
+        </nav>
+    </header>
+    <main id="main">
+        <! -- Hero Section -->
+        <section class="hero wrap section" id="home">
+            <div class="hero-copy reveal">
+                <p class="eyebrow"><span class="pulse"></span>SOFTWARE ENGINEERING STUDENT</p>
+                <h1>Building useful things <br><span class="gradient">Learning every day</span></h1>
+                <p class="lede">Hi, I'm <strong>Mubarik Kedir</strong>, I enjoy turning ideas into clear,useful digital experiences and solving problems.</p>
+            </div>
+    </main>
 </body>
 </html>
