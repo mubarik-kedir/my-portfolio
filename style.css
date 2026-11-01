@@ -1,0 +1,12 @@
+:root{
+  --bg:#0c1f2e;
+   --bg2:#10283a;
+    --card:#143249;
+    --text:#e8f1f8; 
+    --muted:#9db6c9;
+  --sky:#a9d3ee;
+   --amber:#f2a93b;
+    --line:rgba(169,211,238,.18);
+  --head:'Sora',system-ui,sans-serif;
+   --body:'DM Sans',system-ui,sans-serif;
+}
