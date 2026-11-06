@@ -58,29 +58,54 @@ h1,h2,.logo{
   padding:14px 5vw;
   background:color-mix(in srgb,var(--bg) 85%,transparent);
   backdrop-filter:blur(10px);
-  border-bottom:1px solid var(--line)
+  border-bottom:1px solid var(--line);
 }
 .logo{
   font-weight:800;
-  font-size:1.3rem
+  font-size:1.3rem;
 }
 .logo span{
-  color:var(--amber)
+  color:var(--amber);
 }
 nav{
   display:flex;
   align-items:center;
-  gap:28px
+  gap:28px;
 }
 nav a{
   font-weight:500;
   color:var(--muted);
   padding:4px 0;
   border-bottom:2px solid transparent;
-  transition:.2s
+  transition:.2s;
 }
 nav a:hover,nav a.active{
   color:var(--text);
-  border-color:var(--amber)
+  border-color:var(--amber);
 }
+.theme{
+  background:none;
+  border:1px solid var(--line);color:var(--text);
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  cursor:pointer;
+  font-size:1.1rem
+}
+.burger{
+  display:none;
+  background:none;
+  border:0;
+  cursor:pointer;
+  padding:8px
+}
+.burger i{
+  display:block;
+  width:24px;
+  height:2px;
+  background:var(--text);
+  margin:5px 0;
+  transition:.3s
+}
+
 
