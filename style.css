@@ -107,5 +107,41 @@ nav a:hover,nav a.active{
   margin:5px 0;
   transition:.3s
 }
+/* hero */
+.hero{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  align-items:center;
+  gap:40px;
+  padding:110px 5vw 60px;
+  background:
+   radial-gradient(circle at 80% 30%,rgba(169,211,238,.22),transparent 45%),
+   repeating-linear-gradient(45deg,transparent 0 22px,var(--line) 22px 23px),
+   repeating-linear-gradient(-45deg,transparent 0 22px,var(--line) 22px 23px),var(--bg)
+  }
+.hello{
+  color:var(--amber);
+  font-weight:500;
+  font-size:1.1rem;
+}
+h1{
+  font-size:clamp(2.6rem,7vw,5rem);
+  line-height:1.05;
+  font-weight:800;
+  margin:6px 0 14px;
+}
+.role{
+  font-size:clamp(1.2rem,3vw,1.7rem);
+  font-family:var(--head);
+  color:var(--sky)
+}
+.cursor{
+  color:var(--amber);
+  animation:blink 1s steps(1) infinite
+}
+@keyframes blink{
+  50%{opacity:0}
+}
 
 
