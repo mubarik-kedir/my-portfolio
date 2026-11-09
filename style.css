@@ -143,5 +143,46 @@ h1{
 @keyframes blink{
   50%{opacity:0}
 }
+.lead{
+  max-width:52ch;
+  color:var(--muted);
+  margin:18px 0 28px;
+}
+.cta{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+.btn{
+  display:inline-block;
+  padding:12px 26px;
+  border-radius:999px;
+  font-weight:600;
+  border:2px solid var(--amber);
+  cursor:pointer;
+  font-family:var(--body);
+  font-size:1rem;
+  transition:.25s;
+}
+.btn.primary{
+  background:var(--amber);
+  color:#1a1200;
+}
+.btn.primary:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 24px rgba(242,169,59,.35);
+}
+.btn.ghost{
+  color:var(--text);
+}
+.btn.ghost:hover{
+  background:var(--amber);
+  color:#1a1200;
+}
+.hero-photo{
+  display:flex;
+  justify-content:center;
+}
+
 
 
