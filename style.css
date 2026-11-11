@@ -202,6 +202,49 @@ h1{
 @keyframes float{
   50%{transform:translateY(-12px)}
 }
+/* sections */
+.section{
+  padding:100px 5vw;
+}
+.section.alt{
+  background:var(--bg2);
+}
+h2{
+  font-size:clamp(1.8rem,4vw,2.6rem);
+  margin-bottom:36px;
+  display:inline-block;
+  border-bottom:4px solid var(--amber);
+  padding-bottom:4px;
+}
+.about-grid,.contact-grid{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:48px;
+  max-width:1050px;
+}
+.about-grid p{
+  margin-bottom:16px;
+  color:var(--muted);
+  max-width:60ch;
+}
+.facts{
+  list-style:none;
+  display:grid;
+  gap:12px;
+}
+.facts li{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-left:4px solid var(--amber);
+  padding:14px 18px;
+  border-radius:10px;
+}
+.facts strong{
+  display:block;
+  font-size:.85rem;
+  color:var(--sky);
+}
+
 
 
 
