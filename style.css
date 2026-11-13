@@ -244,6 +244,40 @@ h2{
   font-size:.85rem;
   color:var(--sky);
 }
+/* skills */
+.skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+  max-width:1050px;
+}
+.skill{
+  background:var(--card);
+  border:1px solid var(--line);
+  padding:18px 20px;
+  border-radius:14px;
+}
+.skill div{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:10px;
+  font-weight:500;
+}
+.bar{
+  height:8px;
+  background:var(--line);
+  border-radius:8px;
+  overflow:hidden;
+}
+.bar i{
+  display:block;
+  height:100%;
+  width:0;
+  background:linear-gradient(90deg,var(--sky),var(--amber));
+  border-radius:8px;
+  transition:width 1.2s ease;
+}
+
 
 
 
