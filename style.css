@@ -277,6 +277,47 @@ h2{
   border-radius:8px;
   transition:width 1.2s ease;
 }
+/* projects */
+.filters{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:28px;
+}
+.filters button{
+  background:none;
+  border:1px solid var(--line);
+  color:var(--text);
+  padding:8px 18px;
+  border-radius:999px;
+  cursor:pointer;
+  font-family:var(--body);
+  transition:.2s;
+}
+.filters button.on,.filters button:hover{
+  background:var(--amber);
+  color:#1a1200;
+  border-color:var(--amber);
+}
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(290px,1fr));
+  gap:24px;
+  max-width:1150px;
+}
+.project{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  transition:.3s;
+}
+.project:hover{
+  transform:translateY(-6px);
+  border-color:var(--amber);
+}
 
 
 
