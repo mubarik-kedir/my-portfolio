@@ -434,6 +434,16 @@ footer{
   opacity:1;
   pointer-events:auto;
 }
+.reveal{
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity .7s,transform .7s;
+}
+.reveal.in{
+  opacity:1;
+  transform:none;
+}
+
 
 
 
