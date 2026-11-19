@@ -475,6 +475,11 @@ footer{
   .burger[aria-expanded="true"] i:nth-child(1){transform:translateY(7px) rotate(45deg)}
   .burger[aria-expanded="true"] i:nth-child(2){opacity:0}
   .burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+   .hero{grid-template-columns:1fr;text-align:center;padding-top:100px}
+  .hero-photo{order:-1}.frame{width:min(240px,65%)}
+  .lead{margin-inline:auto}.cta{justify-content:center}
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+  .section{padding:80px 6vw}
 }
 
 
