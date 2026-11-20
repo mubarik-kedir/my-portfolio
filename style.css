@@ -481,6 +481,10 @@ footer{
   .about-grid,.contact-grid{grid-template-columns:1fr}
   .section{padding:80px 6vw}
 }
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
 
 
 
