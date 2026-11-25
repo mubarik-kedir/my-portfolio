@@ -37,4 +37,22 @@ skills.forEach(s => {
   el.innerHTML = `<div><span>${s.name}</span><span>${s.level}%</span></div><div class="bar"><i data-w="${s.level}"></i></div>`;
   skillList.appendChild(el);
 });
+// ====== Projects with filter ======
+const list = document.getElementById('projectList');
+const filters = document.getElementById('filters');
+function renderProjects(type) {
+  list.innerHTML = '';
+  projects.filter(p => type === 'All' || p.type === type).forEach(p => {
+    const el = document.createElement('article');
+    el.className = 'project reveal in';
+    el.innerHTML = `
+      <div class="thumb" style="background:${p.color}">${p.title.split(' ').map(w => w[0]).join('').slice(0, 2)}</div>
+      <div class="pbody">
+        <h3>${p.title}</h3><p>${p.desc}</p>
+        <div class="tags">${p.tags.map(t => `<span>${t}</span>`).join('')}</div>
+        <div class="plinks"><a href="${p.code}" target="_blank" rel="noopener">GitHub</a>${p.demo ? `<a href="${p.demo}" target="_blank" rel="noopener">Live demo</a>` : ''}</div>
+      </div>`;
+    list.appendChild(el);
+  });
+}
 
