@@ -56,3 +56,23 @@ function renderProjects(type) {
   });
 }
 
+['All', ...new Set(projects.map(p => p.type))].forEach((t, i) => {
+  const b = document.createElement('button');
+  b.textContent = t; if (i === 0) b.className = 'on';
+  b.onclick = () => {
+    filters.querySelectorAll('button').forEach(x => x.classList.remove('on'));
+    b.classList.add('on'); renderProjects(t);
+  };
+  filters.appendChild(b);
+});
+renderProjects('All');
+
+// ====== Mobile menu ======
+const burger = document.getElementById('burger'), menu = document.getElementById('menu');
+burger.onclick = () => {
+  const open = menu.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open);
+};
+menu.querySelectorAll('a').forEach(a => a.onclick = () => {
+  menu.classList.remove('open'); burger.setAttribute('aria-expanded', false);
+});
