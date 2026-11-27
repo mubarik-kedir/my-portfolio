@@ -76,3 +76,12 @@ burger.onclick = () => {
 menu.querySelectorAll('a').forEach(a => a.onclick = () => {
   menu.classList.remove('open'); burger.setAttribute('aria-expanded', false);
 });
+
+// ====== Theme toggle (remembered) ======
+const root = document.documentElement;
+try { const t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch (e) {}
+document.getElementById('theme').onclick = () => {
+  const next = root.dataset.theme === 'light' ? 'dark' : 'light';
+  root.dataset.theme = next;
+  try { localStorage.setItem('theme', next); } catch (e) {}
+};
